@@ -10,6 +10,28 @@
 </section>
 
 
+<%# Partie musique %>
+<section class="musics">
+    <%# affiche la boite d'une musique %>
+    <div class="container">
+        <div class="row ligne_musics">
+            <div id="musics col-4">
+                <% @musics.each do |music| %>
+                <img src=" <%= music.image %> " alt="image de la musique">
+                <div>
+                    <p> <%= music.name %> </p>
+                    <p> <%= music.artist %> </p>
+                    <button><a href=" <%= link_to 'Découvrir l’histoire', music %> "></a></button>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</section>
+
 
 
 
