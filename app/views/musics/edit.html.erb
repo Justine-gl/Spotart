@@ -1,10 +1,12 @@
-<h1>Editing music</h1>
-
-<%= render "form", music: @music %>
-
-<br>
-
-<div>
-  <%= link_to "Show this music", @music %> |
-  <%= link_to "Back to musics", musics_path %>
-</div>
+<section class="edit">
+  <div class="edit_center">
+    <h1>Editing music</h1>
+    <%= render "form", music: @music %>
+    <br>
+    <div class="link">
+      <%= link_to "Show this music", @music, class: 'link_back_show_music' %>
+      <%= link_to "Retour à l'accueil", musics_path, class: 'link_back_show_music'%>
+    </div>
+  </div>
+  
+</section>
