@@ -240,3 +240,48 @@ table {
     display: flex;
     flex-direction: column;
 }
+
+
+/* fichier show.html.erb */
+.show{
+    background-color: #000000;
+    padding: 0px 128px;
+    color: white;
+    padding-top: 41px;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+.div_flex{
+    display: flex;
+}
+.div_flex img{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: solid 0.5px white;
+}
+.div_p{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.div_p p{
+    font-size: 2rem;
+}
+span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.p_bio_music{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.show_edit{
+    font-size: 1.8rem;
+    background-color: white;
+    padding: 9px 13px;
+    color: #000000;
+    margin-top: 20px;
+}
+.show_edit:hover{
+    color: #000000;
+}
