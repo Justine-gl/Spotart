@@ -11,28 +11,31 @@
 
 
 <%# Partie musique %>
-<section class="musics">
+<section class="musics" id="musics">
+  <div class="container">
     <%# affiche la boite d'une musique %>
-    <div class="container">
-        <div class="row ligne_musics">
-            <div id="musics col-4">
-                <% @musics.each do |music| %>
-                <img src=" <%= music.image %> " alt="image de la musique">
-                <div>
-                    <p> <%= music.name %> </p>
-                    <p> <%= music.artist %> </p>
-                    <%= link_to 'Découvrir l’histoire', music %> ">
+    <div class="row">
+      <% @musics.each do |music| %>
+        <div class="ligne_musics col-md-4">
+            <div class="music">
+                <div class="music_img">
+                    <img src=" <%= music.image %> " alt="image de la musique">
                 </div>
-                <% end %>
+                <div class="music_description">
+                   <p> <%= music.name %> </p>
+                   <p> <%= music.artist %> </p>
+                    <%= link_to 'Découvrir l’histoire', music, class: 'music_lien' %>
+                </div>
             </div>
         </div>
+      <% end %>
     </div>
-    
-    
-
+  </div>
+  <div class="container">
+    <div class="music_div_new row">
+      <%= link_to "New music", new_music_path, class: 'music_new col-md-2' %>
+    </div>
+  </div>
 </section>
 
 
-
-
-<%= link_to "New music", new_music_path %>

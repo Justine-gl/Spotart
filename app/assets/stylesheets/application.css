@@ -70,7 +70,7 @@ table {
 }
 
 
-
+/* fichier index.html.erb */
 /* Partie header */
  .header{
     background-color: #0E0E0E;
@@ -93,10 +93,12 @@ table {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
  }
  .decouvrir{
     font-size: 3.6rem;
     padding-bottom: 14px;
+    color: white;
  }
  .header img{
     width: 64px;
@@ -112,9 +114,97 @@ table {
  .musics{
     height: fit-content;
     background-color: #000000;
-    padding: 0px ;
-    margin-top: 2px;
+    padding: 0px 128px;
+    height: fit-content;
+    padding-top: 50px;
  }
  .ligne_musics{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
  }
+ .music{
+    border: solid 0.5px white;
+    width: 327px;
+    height: 484px;
+    color: white;
+ }
+ .music p{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+ }
+ .music_img{
+    display: flex;
+    justify-content: center;
+ }
+ .music_img img{
+    width: 261px;
+    height: 261px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+ }
+.music_description{
+    margin-left: 32px;
+}
+.music_lien{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 9px 13px;
+    font-size: 2.4rem;
+    border-radius: 20px;
+}
+.music_lien:hover{
+    color: #000000;
+}
+.music_new{
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 9px 13px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.music_div_new{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* fichier _form.html.erb */
+.form_text_area{
+    font-size: 1.8rem;
+    border: solid 0.5px black;
+    resize: none;
+    margin-bottom: 20px;
+}
+.form_label{
+    font-size: 2.4rem;
+}
+.form_submit{
+    font-size: 1.8rem;
+    border: none;
+    padding: 9px 13px;
+}
+
+
+/* fichier new.html.erb */
+.new{
+    height: fit-content;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+.new_center{
+    color: white;
+    margin-top: 50px;
+    border: solid 0.5px white;
+    padding: 30px;
+    background-color: #2d2d2da4;
+}
+.link_back_music{
+    color: white;
+    font-size: 1.8rem;
+}

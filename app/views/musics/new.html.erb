@@ -1,9 +1,11 @@
-<h1>New music</h1>
-
-<%= render "form", music: @music %>
-
-<br>
-
-<div>
-  <%= link_to "Back to musics", musics_path %>
-</div>
+<section class="new">
+  <div class="new_center">
+    <h1>Nouvelle musique</h1>
+    <%= render "form", music: @music %>
+    <br>
+    <div>
+    <%= link_to "Retour à l'accueil", musics_path, class: 'link_back_music'%>
+    </div>
+  </div>
+  
+</section>
