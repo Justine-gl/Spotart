@@ -1,14 +1,20 @@
 <section id="musics" class="show"> 
     <div class="div_flex">
-        <img src="<%= @music.image%>" alt="cover du son">
+        <img src="<%= @music.image%>" alt="cover du son" class='img_show'>
         <div class="div_p">
-            <p><span>Nom de la musique :</span> <%= @music.name %> </p>
-            <p><span>Nom de l'artiste :</span> <%= @music.artist %> </p>
-            <p><span>Biographie de l'artiste :</span> <%= @music.biography_artist %> </p>
+            <p> <%= @music.artist %> </p>
+            <p> <%= @music.name %> </p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/<%= @music.spotify_id %>?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
-    <p class="p_bio_music"><span>Biographie de la musique :</span> <%= @music.description_music %> </p>
-    <%= link_to "Edition de la musique", edit_music_path, class: 'show_edit' %>
+    <p class="p_bio_music"><span>Biographie de l'artiste :</span> <%= @music.biography_artist %> </p>
+    <p class="p_bio_music"><span>Histoire de la musique :</span> <%= @music.description_music %> </p>
+    <div class='div_lien_show'>
+        <%= link_to "Editer de la musique", edit_music_path, class: 'show_edit' %>
+        <%= button_to "Supprimer la musique", @game, method: :delete, class: 'delete_music' %>
+    </div>
+    <%= link_to "Retour à l'accueil", musics_path, class: 'link_back_show_music back_show'%>
+    
 
 </section>
 

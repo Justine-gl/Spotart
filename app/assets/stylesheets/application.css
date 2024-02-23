@@ -18,6 +18,7 @@
 HTML{
     font-size: 10px !important;
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -115,7 +116,7 @@ table {
  /* Partie musique */
  .musics{
     height: fit-content;
-    background-color: #000000;
+    background-color: #040404;
     padding: 0px 128px;
     height: fit-content;
     padding-top: 50px;
@@ -132,6 +133,7 @@ table {
     height: 484px;
     color: white;
     transition: transform 0.3s ease;
+    border-radius: 20px;
  }
  .music:hover{
     transform: scale(1.1);
@@ -158,6 +160,7 @@ table {
     background-color: white;
     padding: 9px 13px;
     font-size: 2rem;
+    border-radius: 20px;
 }
 .music_lien:hover{
     color: #000000;
@@ -170,6 +173,7 @@ table {
     width: fit-content;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
 }
 .music_new:hover{
     color: rgb(51, 51, 51);
@@ -188,6 +192,8 @@ table {
     resize: none;
     margin-bottom: 20px;
     width: 400px;
+    border-radius: 10px;
+    height: fit-content;
 }
 .form_label{
     font-size: 2.4rem;
@@ -196,13 +202,14 @@ table {
     font-size: 1.8rem;
     border: none;
     padding: 9px 13px;
+    border-radius: 20px;
 }
 
 
 /* fichier new.html.erb */
 .new{
     height: fit-content;
-    background-color: #000000;
+    background-color: #040404;
     display: flex;
     justify-content: center;
     /* padding-left: 50px; */
@@ -247,36 +254,45 @@ table {
 
 /* fichier show.html.erb */
 .show{
-    background-color: #000000;
+    background-color: #040404;
     padding: 0px 128px;
     color: white;
     padding-top: 41px;
     height: fit-content;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
 .div_flex{
     display: flex;
 }
 .div_flex img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     padding: 20px;
     border: solid 0.5px white;
+    border-radius: 20px;
+}
+.img_show{
+    border-radius: 20px;
 }
 .div_p{
     margin-left: 20px;
     margin-top: 5px;
+    width: max-content;
 }
 .div_p p{
-    font-size: 2rem;
+    font-size: 2.4rem;
+    line-height: 40px;
+    font-weight: bold;
 }
 span{
     font-weight: bold;
     text-decoration: underline;
 }
 .p_bio_music{
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-top: 20px;
+    line-height: 40px;
+   
 }
 .show_edit{
     font-size: 1.8rem;
@@ -284,7 +300,29 @@ span{
     padding: 9px 13px;
     color: #000000;
     margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 .show_edit:hover{
     color: #000000;
+}
+iframe{
+    height: 350px;
+    width: 500px;
+}
+.delete_music{
+    font-size: 1.8rem;
+    background-color: white;
+    padding: 9px 13px;
+    color: #000000;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+}
+.div_lien_show{
+    display: flex;
+}
+.back_show{
+    padding-top: 10px;
 }
