@@ -1,13 +1,14 @@
-<div id="musics">
+<section id="musics" class="show"> 
+    <div class="div_flex">
+        <img src="<%= @music.image%>" alt="cover du son">
+        <div class="div_p">
+            <p><span>Nom de la musique :</span> <%= @music.name %> </p>
+            <p><span>Nom de l'artiste :</span> <%= @music.artist %> </p>
+            <p><span>Biographie de l'artiste :</span> <%= @music.biography_artist %> </p>
+        </div>
+    </div>
+    <p class="p_bio_music"><span>Biographie de la musique :</span> <%= @music.description_music %> </p>
+    <%= link_to "Edition de la musique", edit_music_path, class: 'show_edit' %>
 
+</section>
 
-
-
-
-        <img src="<%= @music.image %>" alt="image">
-        <img src="../../assets/images/cover2.jpg" alt="cover1">
-
-
-
-
-</div>
