@@ -3,13 +3,17 @@
 <section class="header ">
   <div class="container">
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <h1>Spotart</h1>
             <p class="description">Vous voulez connaître l’histoire des musiques et des artistes ? Tant mieux, vous êtes au bon endroit !</p>
-            <p class="decouvrir">Découvrez leur histoire </p>
-            <a href="#musics"><%= image_tag("fleche_bas.png") %></a>
+        </div>
+        <div class="nouveaux_header col-6">
+          <%= image_tag("nouveaux_artistes.png", alt: "image qui représente des nouveaux artistes", class: "nouveaux_artistes") %>
+          <p>LES NOUVEAUTES</p>
         </div>
     </div>
+      <p class="decouvrir">Découvrez leur histoire </p>
+      <a href="#musics"><%= image_tag("fleche_bas.png", class: "fleche_bas") %></a>
   </div>
 </section>
 
@@ -31,10 +35,10 @@
   <div>
     <p></p>
     <a href=""></a>
-  </div> %>
+  </div> 
 
 
-</section>
+</section>%>
   
 
 
